@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     Rigidbody2D rb;
 
     float movement = 0f;
+    public float score;
     float movementx = 0f;
     Vector2 newx;
 
@@ -29,7 +30,7 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxis("Horizontal") * movementSpeed;
-        FellDown();
+        score = FellDown()+5;
         if (transform.position.x <= -levelWidth)
         {
             newx = transform.position;
@@ -53,13 +54,14 @@ public class Player : MonoBehaviour
         rb.velocity = velocity;
     }
 
-    void FellDown()
+    float FellDown()
     {
         float DownLimit = Camera.main.GetComponent<Transform>().position.y - Deep;
         if (transform.position.y <= DownLimit)
         {
             isDead = true;
         }
+        return DownLimit;
     }
 
 }

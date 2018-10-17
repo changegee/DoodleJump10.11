@@ -61,23 +61,23 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\GameController.cs" />
     <Compile Include="Assets\Resources\Script\CamraFollow.cs" />
+    <Compile Include="Assets\Resources\Script\GameController.cs" />
     <Compile Include="Assets\Resources\Script\LevelGenerator.cs" />
     <Compile Include="Assets\Resources\Script\MoveablePlatform.cs" />
     <Compile Include="Assets\Resources\Script\Platform.cs" />
     <Compile Include="Assets\Resources\Script\Player.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>E:/Unity project/DoodleJump10.10/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>E:/GIT/DoodleJump10.10/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>E:/Unity project/DoodleJump10.10/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>E:/GIT/DoodleJump10.10/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>E:/Unity project/DoodleJump10.10/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>E:/GIT/DoodleJump10.10/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>E:/Unity project/DoodleJump10.10/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>E:/GIT/DoodleJump10.10/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>D:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
