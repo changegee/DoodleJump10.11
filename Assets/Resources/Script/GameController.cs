@@ -24,12 +24,23 @@ public class GameController : MonoBehaviour {
         }
 	}
 
-    public void DoodleDied() {
+    public void DoodleDied()
+    {
+        ShowGanmeOver();
+        ShowScore();
+    }
+
+    private void ShowGanmeOver()
+    {
         gameover = true;
         gameoverTaxt.SetActive(true);
-        
-        scoreTaxt.GetComponent<Text>().text = "SCORE:"+ pl.GetComponent<Player>().score.ToString("0.0");
+    }
+
+    private void ShowScore()
+    {
+        scoreTaxt.GetComponent<Text>().text = "SCORE:" + pl.GetComponent<Player>().score.ToString("0");
         scoreTaxt.SetActive(true);
     }
+
 
 }

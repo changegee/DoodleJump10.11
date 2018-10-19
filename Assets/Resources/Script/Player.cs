@@ -30,7 +30,9 @@ public class Player : MonoBehaviour
     void Update()
     {
         movement = Input.GetAxis("Horizontal") * movementSpeed;
-        score = FellDown()+5;
+
+        score = FellDown() + 5;
+
         if (transform.position.x <= -levelWidth)
         {
             newx = transform.position;
@@ -53,7 +55,10 @@ public class Player : MonoBehaviour
         velocity.x = movement;
         rb.velocity = velocity;
     }
-
+    /// <summary>
+    /// 计算屏幕下边高度
+    /// </summary>
+    /// <returns>屏幕下边高度</returns>
     float FellDown()
     {
         float DownLimit = Camera.main.GetComponent<Transform>().position.y - Deep;

@@ -7,9 +7,6 @@ public class LevelGenerator : MonoBehaviour
 
     public GameObject Prefab;
     public float levelWidth = 2f;
-    /// <summary>
-    /// 输入总数，最小值，最大值
-    /// </summary>
 
     //Normoal Platform
     public float[] data = new float[] { 400f, .6f, 1.5f };
@@ -17,10 +14,14 @@ public class LevelGenerator : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        NewMethod(Prefab, data);
+        BuidePlatform(Prefab, data);
     }
-
-    void NewMethod(GameObject Prefab, float[] data)
+    /// <summary>
+    /// 设置新的平台
+    /// </summary>
+    /// <param name="Prefab">平台预制物</param>
+    /// <param name="data">平台间隔分布范围（最小间距，最大间距）</param>
+    void BuidePlatform(GameObject Prefab, float[] data)
     {
         Vector3 spawnPosition = new Vector3();
         for (var i = 0; i < data[0]; i++)
